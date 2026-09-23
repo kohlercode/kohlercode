@@ -43,6 +43,7 @@ TYPO3 & Extbase · PHP · MySQL & MariaDB · JavaScript / TypeScript · Sass & B
 - **Book a free consultation** — <https://calendar.app.google/3GGbJB9TQu4zv2y39>
 - **Website** — <https://kohlercode.com>
 - **Email** — hello@kohlercode.com
+- **WhatsApp / Phone (Panama)** — +507 6921-8234
 - **LinkedIn** — <https://www.linkedin.com/in/koehlersimon/>
 - **YouTube** — <https://www.youtube.com/@kohlercode>
 - **X** — <https://x.com/koehlersimon>
