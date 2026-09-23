@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'Inter'; src: local('Inter'); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 400px; overflow: hidden; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #07090D;
+    color: #F2EFE8;
+    position: relative;
+  }
+  /* Atmospheric layer: amber nebula (top), cool blue haze (upper right) */
+  .nebula {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(120% 90% at 50% -30%, rgba(232,168,56,0.20) 0%, rgba(232,168,56,0.06) 38%, rgba(232,168,56,0) 68%),
+      radial-gradient(60% 70% at 96% -10%, rgba(26,173,255,0.18) 0%, rgba(26,173,255,0.04) 45%, rgba(26,173,255,0) 72%),
+      linear-gradient(180deg, #0A0D12 0%, #07090D 62%);
+  }
+  .star { position: absolute; width: 1px; height: 1px; background: rgba(242,239,232,0.75); }
+  .s1 { top: 74px;  left: 742px;  }
+  .s2 { top: 138px; left: 1148px; background: rgba(242,239,232,0.5); }
+  .s3 { top: 268px; left: 968px;  background: rgba(242,239,232,0.4); }
+  .s4 { top: 322px; left: 596px;  background: rgba(242,239,232,0.55); }
+  .hairline { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: rgba(242,239,232,0.12); }
+
+  .inner { position: relative; padding: 54px 64px; height: 100%; display: flex; flex-direction: column; align-items: flex-start; }
+  .lockup { height: 34px; width: auto; display: block; align-self: flex-start; }
+  .eyebrow {
+    margin-top: 34px;
+    font-size: 12.8px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; color: #1AADFF;
+  }
+  h1 {
+    margin-top: 14px;
+    font-size: 39px; font-weight: 700; line-height: 1.16; letter-spacing: -0.03em;
+    max-width: none; white-space: nowrap;
+  }
+  h1 .soft { display: block; color: rgba(242,239,232,0.66); }
+  .sub {
+    margin-top: 18px;
+    font-size: 14.5px; font-weight: 500; letter-spacing: 0.01em;
+    color: rgba(242,239,232,0.66);
+  }
+  .sub b { color: #5EBCEE; font-weight: 600; }
+  .foot {
+    align-self: stretch; width: 100%;
+    margin-top: auto;
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 12.5px; font-weight: 600; letter-spacing: 0.06em;
+    color: rgba(242,239,232,0.4);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="nebula"></div>
+  <span class="star s1"></span><span class="star s2"></span><span class="star s3"></span><span class="star s4"></span>
+
+  <div class="inner">
+    <img class="lockup" src="../assets/brand/kohlercode-logo-light.svg" alt="KohlerCode">
+    <div class="eyebrow">AI Integration Expert &middot; Enterprise CMS</div>
+    <h1>AI agents and AI-driven web applications,
+      <span class="soft">running inside your enterprise systems.</span></h1>
+    <div class="sub"><b>TYPO3</b> &amp; Extbase &middot; MCP / API integration &middot; managed AI agents &middot; EN &middot; ES &middot; DE</div>
+    <div class="foot"><span>kohlercode.com</span><span>20 years of engineering</span></div>
+  </div>
+  <div class="hairline"></div>
+</body>
+</html>
