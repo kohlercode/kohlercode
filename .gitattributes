@@ -1,0 +1,3 @@
+# Keep the repo's language bar honest: this is a Markdown frontpage, not an HTML project.
+build/**   linguist-documentation
+assets/**  linguist-documentation
