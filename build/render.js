@@ -1,7 +1,7 @@
 const { chromium } = require('playwright');
 // usage: node render.js <html> <out.png> <selector> <w> <h> [transparent|opaque]
 (async () => {
-  const [file, out, selector, w, h, mode] = process.argv.slice(2);
+  const [file, out, selector, w, h, mode, full] = process.argv.slice(2);
   const b = await chromium.launch();
   const ctx = await b.newContext({
     viewport: { width: parseInt(w, 10), height: parseInt(h, 10) },
@@ -20,7 +20,7 @@ const { chromium } = require('playwright');
     if (!el) throw new Error('selector not found: ' + selector);
     await el.screenshot(opts);
   } else {
-    await p.screenshot({ ...opts, fullPage: false });
+    await p.screenshot({ ...opts, fullPage: full === 'full' });
   }
   const box = selector !== '-' ? await (await p.$(selector)).boundingBox() : { width: +w, height: +h };
   console.log('wrote', out, JSON.stringify(box), 'errs:', errs.length ? errs.join(' | ') : 'none');

@@ -33,7 +33,7 @@ If these saved you time: [kohlercode.com/donate](https://kohlercode.com/donate) 
 ## Stack
 
 <p>
-  <img src="assets/kohlercode-tech-stack.png" width="640" alt="AI agents, TYPO3, PHP, MySQL, JavaScript, TypeScript, Sass, Bootstrap, Node.js, Docker, Linux, Nginx, Redis, Git, Python">
+  <img src="assets/kohlercode-tech-stack.png" width="100%" alt="AI agents, TYPO3, PHP, MySQL, JavaScript, TypeScript, Sass, Bootstrap, Node.js, Docker, Linux, Nginx, Redis, Git, Python">
 </p>
 
 TYPO3 & Extbase · PHP · MySQL & MariaDB · JavaScript / TypeScript · Sass & Bootstrap · Docker · Linux · Nginx · Redis · MCP server & API integration
