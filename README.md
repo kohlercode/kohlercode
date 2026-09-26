@@ -28,6 +28,8 @@ TYPO3 extensions I maintain and publish for the community — 7 published extens
 
 Newer AI work lives on GitHub: [`agents`](https://github.com/kohlercode/agents) puts AI chat with tool calling inside the TYPO3 backend — assistants that answer questions, draft content and act on the site through controlled tool calls, with unlimited developer-defined tools. Extension Repository release pending.
 
+[`voltilt`](https://github.com/kohlercode/voltilt) is the newest release, and not a CMS extension at all: high-performance CSS-3D navigation primitives — a finger-follow coverflow and a virtualized Z-axis timeline in plain JavaScript, no Three.js and no GSAP, published on npm as `@voltilt/coverflow` and `@voltilt/z-timeline`. It grew out of the heads-up display we run for our own AI agents, where a panel has to stay smooth with thousands of entries instead of a dozen. MIT licensed, with [live demos loading 2,500 and 5,000 items from JSON](https://kohlercode.github.io/voltilt/).
+
 If these saved you time: [kohlercode.com/donate](https://kohlercode.com/donate) funds open-source work only.
 
 ## Stack
